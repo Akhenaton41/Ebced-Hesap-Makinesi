@@ -32,3 +32,5 @@ Antik ve kadim dillerin numerolojik (Ebced / Isopsephy) değerlerini modern web 
 │   ├── isimler.js         # Otomatik tamamlama için entegre isim veritabanı
 │   └── jquery.min.js      # Yardımcı arayüz kütüphanesi
 └── index.htm # Ana uygulama arayüzü
+
+![Ebced Hesaplama Makinesi Arayüzü](images/view.jpg)
