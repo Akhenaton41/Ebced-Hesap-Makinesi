@@ -169,7 +169,7 @@ function autocomplete(inp, arr) {
 	}
 
 	document.addEventListener("click", function (e){closeAllLists(e.target);});
-} // <--- KRİTİK KAPANIŞ: autocomplete fonksiyonu burada bitti, alt taraf tamamen özgürleşti!
+} // <--- KRÄ°TÄ°K KAPANIÅ: autocomplete fonksiyonu burada bitti, alt taraf tamamen Ã¶zgÃ¼rleÅŸti!
 
 function butonDurumuDegistir(){
 	if(id("R2").checked){
@@ -195,7 +195,7 @@ function kaydir(hedefId) {
 }
 
 function gizleGetir(e){
-    var görünüm = (e == 1) ? "inline-block" : "none";
+    var gÃ¶rÃ¼nÃ¼m = (e == 1) ? "inline-block" : "none";
     var labels = document.getElementsByClassName("switch-field")[1];
     if (!labels) return;
 
@@ -203,18 +203,18 @@ function gizleGetir(e){
     var labellar = labels.getElementsByTagName("label");
 
     for (var i = 1; i < inputlar.length; i++) {
-        if (inputlar[i]) inputlar[i].style.display = görünüm;
-        if (labellar[i]) labellar[i].style.display = görünüm;
+        if (inputlar[i]) inputlar[i].style.display = gÃ¶rÃ¼nÃ¼m;
+        if (labellar[i]) labellar[i].style.display = gÃ¶rÃ¼nÃ¼m;
     }
 }
 
 function klavyeGetir(degisken){
 
-console.log("--- klavyeGetir TETİKLENDİ ---");
+console.log("--- klavyeGetir TETÄ°KLENDÄ° ---");
 	a$="<center><ul id='numbers'>"
 	
 	for(i=0;i<degisken.length;i++){
-		harf=degisken[i].split("·")
+		harf=degisken[i].split("Â·")
 		a$+="<li onclick='harfEkle(this)'"
 		if(harf[2]==2){a$+=" class='uzun'"}
 		if(harf[2]==3){a$+=" class='uzun-mavi'"}
@@ -226,12 +226,12 @@ console.log("--- klavyeGetir TETİKLENDİ ---");
 	a$+="</ul></center>"
 
 	id("keyboard").innerHTML=a$
-	console.log("Klavye HTML içeriği başarıyla 'keyboard' divine basıldı.");
+	console.log("Klavye HTML iÃ§eriÄŸi baÅŸarÄ±yla 'keyboard' divine basÄ±ldÄ±.");
 }
 	
-// Fonksiyonu doğrudan pencereye (window) bağlıyoruz ki hiçbir harici listener onu ezemesin!
+// Fonksiyonu doÄŸrudan pencereye (window) baÄŸlÄ±yoruz ki hiÃ§bir harici listener onu ezemesin!
 window.klavyeSec = function(e) {
-	console.log("=== klavyeSec TETİKLENDİ ===");
+	console.log("=== klavyeSec TETÄ°KLENDÄ° ===");
 	
 	var kaynakElement = e;
 	var secilenDeger = "";
@@ -286,9 +286,9 @@ window.klavyeSec = function(e) {
 		}
 	}
 
-	// Hafıza kaydını da doğrudan ana fonksiyonun içinde bitiriyoruz
+	// HafÄ±za kaydÄ±nÄ± da doÄŸrudan ana fonksiyonun iÃ§inde bitiriyoruz
 	if (kaynakElement && kaynakElement.id) {
-		console.log("Hafızaya yazılan ID:", kaynakElement.id);
+		console.log("HafÄ±zaya yazÄ±lan ID:", kaynakElement.id);
 		localStorage.setItem('seciliKlavye', kaynakElement.id);
 	}
 }
