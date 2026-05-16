@@ -80,14 +80,14 @@ b[data-tooltip]:hover:after {
 		<textarea name="screen" id="screen" autofocus></textarea>
 		
 		<fieldset>
-			<legend>Tuþ Takýmý Seçenekleri</legend>
+			<legend>Tuş Takımı Seçenekleri</legend>
 			
 <div class="switch-field">
     <input type="radio" id="radio-one" name="switch-one" value="0" checked onclick="klavyeSec(this)">
-    <label for="radio-one">Osmanlýca</label>
+    <label for="radio-one">Osmanlıca</label>
     
     <input type="radio" id="radio-two" name="switch-one" value="1" onclick="klavyeSec(this)">
-    <label for="radio-two">Ýbranice</label>
+    <label for="radio-two">İbranice</label>
     
     <input type="radio" id="radio-three" name="switch-one" value="2" onclick="klavyeSec(this)">
     <label for="radio-three">Yunanca</label>     
@@ -106,7 +106,7 @@ b[data-tooltip]:hover:after {
 			
 			<div id="aciklamaPaneli">
 				<div class="aciklama-ic">
-					<div><br>Ebced Deðeri:<br><b id="ebcedAlani">-</b></div>
+					<div><br>Ebced Değeri:<br><b id="ebcedAlani">-</b></div>
 					
 					<div id="aciklama-tablo"></div>
 				</div>
@@ -118,7 +118,7 @@ b[data-tooltip]:hover:after {
 			<legend>Ebced Yöntemi</legend>
 <div class="switch-field" style='margin-bottom:5px'>
     <input type="radio" id="R3" name="switch-3" value="0" checked="">
-    <label for="R3">Asýl/Temel Ebced</label>
+    <label for="R3">Asıl/Temel Ebced</label>
     
     <input type="radio" id="R4" name="switch-3" value="1">
     <label for="R4">Büyük Ebced</label>    
@@ -133,10 +133,10 @@ b[data-tooltip]:hover:after {
 
 
 		<fieldset>
-			<legend>Kayýtlý Arapça Ýsimler</legend>
+			<legend>Kayıtlı Arapça İsimler</legend>
 				
 			<p>
-				<div id="aramaKutusuAlani"><span>&#128269;</span> <input id="myInput" placeholder="Örnek: Ayþe" value="" onfocus=""></div>
+				<div id="aramaKutusuAlani"><span>&#128269;</span> <input id="myInput" placeholder="Örnek: Ayşe" value="" onfocus=""></div>
 				
 				<div id="autocomplete"><div class="autocomplete"></div></div>
 				</p>	
@@ -148,15 +148,15 @@ b[data-tooltip]:hover:after {
 			<legend>Hesaplama Seçenekleri</legend>
 				<div class="switch-field">
 				<input type="radio" id="R1" name="switch-2" value="yes" onclick="butonDurumuDegistir()">
-				<label for="R1">Yazma Anýnda Bul</label>
+				<label for="R1">Yazma Anında Bul</label>
 				<input type="radio" id="R2" name="switch-2" value="no" onclick="butonDurumuDegistir()">
 				<label for="R2">Butonla Bul</label>			
 				</div>
 				
 				<!-- Rounded switch -->
-				<label class="switch"><input type="checkbox" id="C2"><span class="slider round"> </span></label><span class="switch-text">Kelime sonlarýndaki “yuvarlak he”leri (&#1600;&#1607;) müenneslik “te”sine (&#1600;&#1577;) çevir. <b data-tooltip="Yuvarlak veya kapalý te olarak ya da tau marbuta olarak isimlendirilir. Ýsmin asýl harflerinden sonra kapalý te harfi ( &#1577; ) olarak isme eklenir, eklendiði ismin diþi, müennes olduðuna iþaret eder.">?</b></span><br>
+				<label class="switch"><input type="checkbox" id="C2"><span class="slider round"> </span></label><span class="switch-text">Kelime sonlarındaki “yuvarlak he”leri (&#1600;&#1607;) müenneslik “te”sine (&#1600;&#1577;) çevir. <b data-tooltip="Yuvarlak veya kapalı te olarak ya da tau marbuta olarak isimlendirilir. İsmin asıl harflerinden sonra kapalı te harfi ( &#1577; ) olarak isme eklenir, eklendiği ismin dişi, müennes olduğuna işaret eder.">?</b></span><br>
 				
-				<label class="switch"><input type="checkbox" id="C1"><span class="slider round"> </span></label><span class="switch-text">Þeddeli harfleri 2 kere say.</span>
+				<label class="switch"><input type="checkbox" id="C1"><span class="slider round"> </span></label><span class="switch-text">Şeddeli harfleri 2 kere say.</span>
 		</fieldset>
 	
 	</div><br>
@@ -167,15 +167,15 @@ b[data-tooltip]:hover:after {
 
 <script type="text/javascript">var eskiKlavye="",counter=0,ayrac
 
-var Osmanlica=["elif·&#1575;","uzun elif·&#1570;","hemzeli elif·&#1571;","hemzeli elif·&#1573;","be·&#1576;","pe·&#1662;·1","te·&#1578;","se·&#1579;","cim·&#1580;","çe·&#1670;·1","ha·&#1581;","hý·&#1582;","dal·&#1583;","zel·&#1584;","ra·&#1585;","ze·&#1586;","je·&#1688;·1","sin·&#1587;","þýn·&#1588;","sad·&#1589;","dat·&#1590;","tý·&#1591;","zý·&#1592;","ayýn·&#1593;","ðayýn·&#1594;","fe·&#1601;","kaf·&#1602;","kef·&#1603;","kef-i fârisî·&#1711;","lam·&#1604;","mim·&#1605;","nun·&#1606;","nazal n·&#1709;","vav·&#1608;","yuvarlak he·&#1607;","hemzeli he·&#1728;","yuvarlak te·&#1577;","lamelif·&#65275;","ye·&#1609;","noktalý ye·&#1610;","hemzeli ye·&#1574;","hemze·&#1569;","üstün·&#1614;","esre·&#1616;","ötre·&#1615;","iki üstün·&#1611;","iki esre·&#1613;","iki ötre·&#1612;","þedde·&#1617;","cezm·&#1618;","uzun üstün·&#1648;","üst hemze·&#1620;","boþluk· ·2","Temizle··3"]
+var Osmanlica=["elif·&#1575;","uzun elif·&#1570;","hemzeli elif·&#1571;","hemzeli elif·&#1573;","be·&#1576;","pe·&#1662;·1","te·&#1578;","se·&#1579;","cim·&#1580;","çe·&#1670;·1","ha·&#1581;","hı·&#1582;","dal·&#1583;","zel·&#1584;","ra·&#1585;","ze·&#1586;","je·&#1688;·1","sin·&#1587;","şın·&#1588;","sad·&#1589;","dat·&#1590;","tı·&#1591;","zı·&#1592;","ayın·&#1593;","ğayın·&#1594;","fe·&#1601;","kaf·&#1602;","kef·&#1603;","kef-i fârisî·&#1711;","lam·&#1604;","mim·&#1605;","nun·&#1606;","nazal n·&#1709;","vav·&#1608;","yuvarlak he·&#1607;","hemzeli he·&#1728;","yuvarlak te·&#1577;","lamelif·&#65275;","ye·&#1609;","noktalı ye·&#1610;","hemzeli ye·&#1574;","hemze·&#1569;","üstün·&#1614;","esre·&#1616;","ötre·&#1615;","iki üstün·&#1611;","iki esre·&#1613;","iki ötre·&#1612;","şedde·&#1617;","cezm·&#1618;","uzun üstün·&#1648;","üst hemze·&#1620;","boşluk· ·2","Temizle··3"]
 
-var Ibranice=["alef·&#1488;","bet·&#1489;","tav·&#1514;","gimel·&#1490;","het·&#1495;","dalet·&#1491;","reþ·&#1512;","zayin·&#1494;","sameh·&#1505;","sin·&#1513;","tsad #1·&#1509;","tsad #2·&#1510;","tet·&#1496;","ayýn·&#1506;","fe / pe·&#1508;","son fe / pe·&#1507;","kof·&#1511;","kâf·&#1498;","lamed·&#1500;","mem·&#1502;","son mem·&#1501;","nun #1·&#1503;","nun #2·&#1504;","ters nun·&#1478;","vav·&#1493;","çift vav·&#1520;","vav-yodh·&#1521;","yodh·&#1497;","çift yodh·&#1522;","he·&#1492;","boþluk· ·2","Temizle··3","maqaf·&#1470;","passuk·&#1472;","sof passuk·&#1475;","grash·&#1523;","grashayim·&#1524;","patach·&#1463;","kamatz·&#1464;","tzere·&#1461;","segol·&#1462;","hl-male·&#64331;","hl-haser·&#1465;","shuruk·&#64309;","kubutz·&#1467;","hirik haser·&#1460;","ht-patach·&#1458;","ht-kamatz·&#1459;","shewa na·&#1456;","dagesh·&#1468;"]
+var Ibranice=["alef·&#1488;","bet·&#1489;","tav·&#1514;","gimel·&#1490;","het·&#1495;","dalet·&#1491;","reş·&#1512;","zayin·&#1494;","sameh·&#1505;","sin·&#1513;","tsad #1·&#1509;","tsad #2·&#1510;","tet·&#1496;","ayın·&#1506;","fe / pe·&#1508;","son fe / pe·&#1507;","kof·&#1511;","kâf·&#1498;","lamed·&#1500;","mem·&#1502;","son mem·&#1501;","nun #1·&#1503;","nun #2·&#1504;","ters nun·&#1478;","vav·&#1493;","çift vav·&#1520;","vav-yodh·&#1521;","yodh·&#1497;","çift yodh·&#1522;","he·&#1492;","boşluk· ·2","Temizle··3","maqaf·&#1470;","passuk·&#1472;","sof passuk·&#1475;","grash·&#1523;","grashayim·&#1524;","patach·&#1463;","kamatz·&#1464;","tzere·&#1461;","segol·&#1462;","hl-male·&#64331;","hl-haser·&#1465;","shuruk·&#64309;","kubutz·&#1467;","hirik haser·&#1460;","ht-patach·&#1458;","ht-kamatz·&#1459;","shewa na·&#1456;","dagesh·&#1468;"]
 
-var Yunanca=["ALFA·&#913;","alfa·&#945;","BETA·&#914;","beta·&#946;","GAMMA·&#915;","gamma·&#947;","DELTA·&#916;","delta·&#948;","EPSÝLON·&#917;","epsion·&#949;","ZETA·&#918;","zeta·&#950;","ETA·&#919;","eta·&#951;","THETA·&#920;","theta·&#952;","ÝOTA·&#921;","iota·&#953;","KAPPA·&#922;","kappa·&#954;","KOPPA·&#984;","koppa·&#990;&#884;","LAMBDA·&#923;","lambda·&#955;","MU·&#924;","mu·&#956;","NU·&#925;","nu·&#957;","XÝ·&#926;","xi·&#958;","OMÝCRON·&#927;","omicron·&#959;","PÝ·&#928;","pi·&#960;","RHO·&#929;","rho·&#961;","SÝGMA #1·&#931;","sigma #1a·&#963;","sigma #1b·&#962;","SÝGMA #2·&#1017;","sigma #2·&#1010;","SAMPÝ·&#882;","TAU·&#932;","tau·&#964;","UPSÝLON·&#933;","upsilon·&#965;","PHÝ·&#934;","phi·&#966;","CHÝ·&#935;","chi·&#967;","PSÝ·&#936;","psi·&#968;","OMEGA·&#937;","omega·&#969;","boþluk· ·2","Temizle··3"]
+var Yunanca=["ALFA·&#913;","alfa·&#945;","BETA·&#914;","beta·&#946;","GAMMA·&#915;","gamma·&#947;","DELTA·&#916;","delta·&#948;","EPSİLON·&#917;","epsion·&#949;","ZETA·&#918;","zeta·&#950;","ETA·&#919;","eta·&#951;","THETA·&#920;","theta·&#952;","İOTA·&#921;","iota·&#953;","KAPPA·&#922;","kappa·&#954;","KOPPA·&#984;","koppa·&#990;&#884;","LAMBDA·&#923;","lambda·&#955;","MU·&#924;","mu·&#956;","NU·&#925;","nu·&#957;","Xİ·&#926;","xi·&#958;","OMİCRON·&#927;","omicron·&#959;","Pİ·&#928;","pi·&#960;","RHO·&#929;","rho·&#961;","SİGMA #1·&#931;","sigma #1a·&#963;","sigma #1b·&#962;","SİGMA #2·&#1017;","sigma #2·&#1010;","SAMPİ·&#882;","TAU·&#932;","tau·&#964;","UPSİLON·&#933;","upsilon·&#965;","PHİ·&#934;","phi·&#966;","CHİ·&#935;","chi·&#967;","PSİ·&#936;","psi·&#968;","OMEGA·&#937;","omega·&#969;","boşluk· ·2","Temizle··3"]
 
-var Suryanice = ["Olaf·&#1813;", "Beth·&#1815;", "Gomal·&#1817;", "Dalath·&#1819;", "He·&#1821;", "Vav·&#1822;", "Zayn·&#1823;", "Heth·&#1824;", "Teth·&#1825;", "Yodh·&#1826;", "Kaph·&#1828;", "Lamadh·&#1832;", "Mim·&#1833;", "Nun·&#1835;", "Semkath·&#1836;", "E·&#1838;", "Pe·&#1839;", "Tsadhe·&#1841;", "Qoph·&#1842;", "Rish·&#1843;", "Shin·&#1845;", "Tau·&#1846;", "boþluk· ·2", "Temizle··3"];
+var Suryanice = ["Olaf·&#1813;", "Beth·&#1815;", "Gomal·&#1817;", "Dalath·&#1819;", "He·&#1821;", "Vav·&#1822;", "Zayn·&#1823;", "Heth·&#1824;", "Teth·&#1825;", "Yodh·&#1826;", "Kaph·&#1828;", "Lamadh·&#1832;", "Mim·&#1833;", "Nun·&#1835;", "Semkath·&#1836;", "E·&#1838;", "Pe·&#1839;", "Tsadhe·&#1841;", "Qoph·&#1842;", "Rish·&#1843;", "Shin·&#1845;", "Tau·&#1846;", "boşluk· ·2", "Temizle··3"];
 
-var Aramice = ["Alef·&#1488;", "Beth·&#1489;", "Gamel·&#1490;", "Daleth·&#1491;", "He·&#1492;", "Vav·&#1493;", "Zayin·&#1494;", "Heth·&#1495;", "Teth·&#1496;", "Yud·&#1497;", "Kaph·&#1498;", "Lamadh·&#1500;", "Mim·&#1502;", "Nun·&#1504;", "Samkath·&#1505;", "Ayin·&#1506;", "Pe·&#1508;", "Tsade·&#1510;", "Qop·&#1511;", "Resh·&#1512;", "Shin·&#1513;", "Tav·&#1514;", "boþluk· ·2", "Temizle··3"];
+var Aramice = ["Alef·&#1488;", "Beth·&#1489;", "Gamel·&#1490;", "Daleth·&#1491;", "He·&#1492;", "Vav·&#1493;", "Zayin·&#1494;", "Heth·&#1495;", "Teth·&#1496;", "Yud·&#1497;", "Kaph·&#1498;", "Lamadh·&#1500;", "Mim·&#1502;", "Nun·&#1504;", "Samkath·&#1505;", "Ayin·&#1506;", "Pe·&#1508;", "Tsade·&#1510;", "Qop·&#1511;", "Resh·&#1512;", "Shin·&#1513;", "Tav·&#1514;", "boşluk· ·2", "Temizle··3"];
 
 function id(e){return document.getElementById(e)}
 
@@ -185,13 +185,13 @@ function baslangic(){
     var hafizadakiKlavye = localStorage.getItem("seciliKlavye");  // radio-one, radio-two, vb.
     // -------------------------------
 
-    // --- SEÇÝLÝ KLAVYEYÝ HAFIZADAN YÜKLE (GÜVENLÝ KONTROL) ---
-    // Eðer hafýza doluysa VE o ID'ye sahip element DOM'da gerçekten varsa onu seç
+    // --- SEÇİLİ KLAVYEYİ HAFIZADAN YÜKLE (GÜVENLİ KONTROL) ---
+    // Eğer hafıza doluysa VE o ID'ye sahip element DOM'da gerçekten varsa onu seç
     if (hafizadakiKlavye && id(hafizadakiKlavye)) {
         id(hafizadakiKlavye).checked = true;
         id(hafizadakiKlavye).click();
     } else {
-        // Hafýza boþsa veya element bulunamadýysa ÝLK ELEMENTÝ (Osmanlýca) güvenle seçiyoruz
+        // Hafıza boşsa veya element bulunamadıysa İLK ELEMENTİ (Osmanlıca) güvenle seçiyoruz
         if (id("radio-one")) {
             id("radio-one").checked = true;
             id("radio-one").click();
@@ -201,11 +201,11 @@ function baslangic(){
     
     if(id("R1")){ id("R1").checked = true; }
     
-    // --- GÜNCELLEME: Hafýza kontrolüne göre varsayýlan ebced yöntemini seç ---
+    // --- GÜNCELLEME: Hafıza kontrolüne göre varsayılan ebced yöntemini seç ---
     if (hafizadakiYontem && id(hafizadakiYontem)) {
         id(hafizadakiYontem).checked = true;
     } else {
-        if (id("R3")) { id("R3").checked = true; } // Hiç kayýt yoksa Asýl Temel Ebced
+        if (id("R3")) { id("R3").checked = true; } // Hiç kayıt yoksa Asıl Temel Ebced
     }
     // ---------------------------------------
     
@@ -303,7 +303,7 @@ function Bul(){
 	for (jj = 0; jj < isim1.length; jj++) {
 		
 		if(!arabic.test(isim1[jj])){
-			alert(isim1[jj]+" ismi veritabanýnda kayýtlý deðil!")
+			alert(isim1[jj]+" ismi veritabanında kayıtlı değil!")
 			bulunamadi=true
 			break;
 			}
@@ -329,9 +329,9 @@ function isimEkle(e,Default){
 		e2=e[1].value.trim()
 		}
 	
-	a$="Ýsim: <span id='isimAlani'>"+e1+"</span> (Arapça: <span style=\"font-family:'Amiri', serif; font-size:20px !important;\">"+e2+"</span>)<br>"
+	a$="İsim: <span id='isimAlani'>"+e1+"</span> (Arapça: <span style=\"font-family:'Amiri', serif; font-size:20px !important;\">"+e2+"</span>)<br>"
 	a$+="<button id='Kopyala'>Ekrana Kopyala</button> "
-	//a$+="<button onclick=''>Ayrýntýlý Hesapla</button> "
+	//a$+="<button onclick=''>Ayrıntılı Hesapla</button> "
 	a$+="<button onclick='Temizle()'>Temizle</button>"
 	
 	div.innerHTML=a$
