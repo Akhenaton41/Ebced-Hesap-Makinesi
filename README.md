@@ -1,5 +1,5 @@
 
-![Ebced Hesaplama Makinesi Arayüzü](images/view.jpg)
+<img src="images/view.jpg" width="50%" alt="Ebced Hesaplama Makinesi Arayüzü">
 
 # 📟 Gelişmiş Ebced Hesaplama Makinesi
 
