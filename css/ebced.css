@@ -1,0 +1,468 @@
+*{scroll-behavior: smooth;}
+
+body{background-color: #666;}
+
+h1,h2{color:#fff;color:hsla(0,0%,0%,0);text-shadow:#bbb 0 0 1px,#fff 0 -1px 2px,#fff 0 -3px 2px,rgba(0,0,0,0.8) 0 30px 25px;transition:margin-left .3s cubic-bezier(0,1,0,1);text-align:center;font-weight:700}
+
+h1{font-size: 3em;}
+h2{font-size: 2.3em;}
+
+#calculator{
+	border:0px solid #000;
+	width:75%;
+	min-height:1000px;
+	padding:0px; 10px;
+	border-radius: 20px;
+	box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25), 10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.25), inset 5px 5px 15px rgba(0, 0, 0, 0.25);
+	background:#494949;
+	}
+
+#Ekran{position:relative;}
+#Ekran textarea{position:absolute;left:9%;top:16%;font-size: 32px;}
+
+#screen{
+	position:absolute;
+	top:8% !important;
+	width:82%;
+	height:310px;
+	background: transparent;
+	border: none;
+	outline: none;
+	resize: none;
+	text-shadow:1px 1px 1px #666;
+	}
+
+fieldset{
+	position:relative;
+	
+	border: 0px solid #03e9f4;
+
+	box-shadow: inset 0px 0px 4px #000, inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+	
+	color: rgba(0,0,0,0.6);
+	font-size: 14px;
+	
+	
+	width:90%;
+	max-width:90%;
+		
+	position:relative;
+	margin-top:-20px;
+	text-align:left;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+	}
+
+legend{
+	padding:4px 1em;
+    
+    font-family:arial;
+    font-size:16px;
+    
+    color: rgba(0,0,0,0.6);
+    color: #ccc;
+   
+	background:#575757;
+	
+	box-shadow: inset 0px 0px 4px #000, inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+	text-shadow: 0px 0px 2px #000;
+	
+	border:0px solid #000;
+    border-radius: 10px 10px 10px 10px;
+	text-align: center;     
+    
+    
+
+	}
+
+.switch-field{display:flex;margin-bottom:36px;margin-top:10px;overflow:hidden}
+
+.switch-field input{position:absolute!important;clip:rect(0,0,0,0);height:1px;width:1px;border:0;overflow:hidden}
+
+.switch-field label{background-color:#e4e4e4;color:rgba(0,0,0,0.6);font-size:14px;line-height:1;text-align:center;padding:8px 16px;margin-right:0px;border:1px solid rgba(0,0,0,0.2);box-shadow:inset 0 1px 3px rgba(0,0,0,0.3),0 1px rgba(255,255,255,0.1);transition:all .1s ease-in-out}
+
+.switch-field label:hover {cursor: pointer;}
+
+.switch-field input:checked + label {
+	background:linear-gradient(to right, #029299,#03e9f4,#029299);
+	
+	background:#a5dc86;
+	
+	box-shadow: none;}
+
+.switch-field label:first-of-type {border-radius: 4px 0 0 4px;}
+
+.switch-field label:last-of-type {border-radius: 0 4px 4px 0;}
+
+
+ /* The switch - the box around the slider */
+.switch{position:relative;display:inline-block;width:60px;height:34px;float:left;margin-right:10px}
+
+/* Hide default HTML checkbox */
+.switch input{opacity:0;width:0;height:0}
+
+/* The slider */
+.slider{background-color:#666;position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;-webkit-transition:.4s;transition:.4s}
+
+.slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:#fff;-webkit-transition:.4s;transition:.4s}
+
+
+input:checked + .slider{background-color: #ccc; }
+
+
+input:focus + .slider {box-shadow: 0 0 1px #2196F3;}
+
+input:checked + .slider:before{-webkit-transform: translateX(26px);-ms-transform: translateX(26px);transform: translateX(26px);}
+
+/* Rounded sliders */
+.slider.round{border-radius: 34px;}
+
+.slider.round:before{border-radius: 50%;} 
+
+
+
+
+.switch-text{color:#ccc;text-shadow:2px 2px 5px #000;line-height:34px;display:table-cell;vertical-align:bottom;font-family:arial}
+
+
+
+#keyboard{direction:rtl;margin:-10px 0 5px;max-width:740px;width:740px;height:345px;background:#d5d9dc url() repeat-x;-moz-border-radius-topleft:7px 21px;-moz-border-radius-topright:7px 21px;-moz-border-radius-bottomright:10px;-moz-border-radius-bottomleft:10px;border-top-left-radius:7px 21px;border-top-right-radius:7px 21px;border-bottom-right-radius:10px;border-bottom-left-radius:10px;padding:20px 10px 0;-webkit-box-shadow:inset 0 0 8px #bbb,0 1px 0 #aaa,0 4px 0 #bbb,0 10px 30px #111;-moz-box-shadow:inset 0 0 8px #bbb,0 1px 0 #aaa,0 4px 0 #bbb,0 10px 30px #111;box-shadow:inset 0 0 8px #bbb,0 1px 0 #aaa,0 4px 0 #bbb,0 10px 30px #111}
+
+
+
+
+.key{position:relative;animation-name:Belirme;animation-duration:1s;padding:0;display:block;color:#aaa;font-family:arial;text-decoration:none;text-align:center;width:65px;height:46px;margin:5px;background:#222;-moz-border-radius:4px;border-radius:4px;border-top:1px solid #222;-webkit-box-shadow:inset 0 0 25px #333,0 1px 0 #000,0 2px 0 #222,0 2px 3px #333;-moz-box-shadow:inset 0 0 25px #333,0 1px 0 #000,0 2px 0 #222,0 2px 3px #333;box-shadow:inset 0 0 25px #333,0 1px 0 #000,0 2px 0 #222,0 2px 3px #333;text-shadow:0 -1px 0 #000}
+
+.key:active,.keydown{color:#888;background:#222;margin:7px 5px 3px;-webkit-box-shadow:inset 0 0 25px #333,0 0 3px #333;-moz-box-shadow:inset 0 0 25px #333,0 0 3px #333;box-shadow:inset 0 0 25px #333,0 0 3px #333;border-top:1px solid #000}
+
+#numbers li a b{font-size: 15pt;margin:0px;padding:0px;}
+#numbers li a span {display: block; font-size: 9pt;}
+ul, ol {padding: 0px; margin: 0;}
+
+.uzun a{width:215px !important}
+.uzun-mavi a{width:215px !important; }
+
+ul {list-style-type: none; width: 784px; margin: 0 auto;}
+li {float: right; }
+
+
+#hesaplaButonu {
+    position: absolute;
+    top: 0px;
+    right: 12px;
+    display: none;
+}
+
+#hesaplaButonu a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #a5dc86; /* Yazý rengi radyo yeþili yapýldý */
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 20px;
+    letter-spacing: 4px;
+}
+
+/* Üzerine gelince (Hover) yeþil neon patlamasý */
+#hesaplaButonu a:hover {
+    background: #a5dc86;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #a5dc86, 
+                0 0 25px #a5dc86, 
+                0 0 50px #a5dc86, 
+                0 0 100px #a5dc86;
+}
+
+#hesaplaButonu a span {
+    position: absolute;
+    display: block;
+}
+
+/* 1. Çizgi: Soldan saða akan üst þerit */
+#hesaplaButonu a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #a5dc86);
+    animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1 {
+    0% { left: -100%; }
+    50%, 100% { left: 100%; }
+}
+
+/* 2. Çizgi: Yukarýdan aþaðý akan sað þerit */
+#hesaplaButonu a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #a5dc86);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-anim2 {
+    0% { top: -100%; }
+    50%, 100% { top: 100%; }
+}
+
+/* 3. Çizgi: Saðdan sola akan alt þerit */
+#hesaplaButonu a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #a5dc86);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+@keyframes btn-anim3 {
+    0% { right: -100%; }
+    50%, 100% { right: 100%; }
+}
+
+/* 4. Çizgi: Aþaðýdan yukarý akan sol þerit */
+#hesaplaButonu a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #a5dc86);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+@keyframes btn-anim4 {
+    0% { bottom: -100%; }
+    50%, 100% { bottom: 100%; }
+}
+
+
+.belirme{
+	animation-name: Belirme;
+	animation-duration: 1s;	
+	}
+
+@keyframes Belirme {
+	from {opacity: 0.0;}
+	to {opacity: 1.0;}
+	}
+
+.yokolma{
+	animation-name: Yokolma;
+	animation-duration: 1s;	
+	}
+
+@keyframes Yokolma {
+	from {opacity: 1.0;}
+	to {opacity: 0.0;}
+	}
+	
+.Sayi{color:red;border:0px solid #fff;position:absolute;left:0;top:-20px;width:65px;height:25px;
+	z-index:999;
+	display: table-cell;
+	vertical-align: bottom;
+	font-size:20px;
+	text-shadow: 0 0 3px #000, 0 0 5px #000;
+	
+	animation-name: Dagilma;
+	animation-duration: 3s;
+	}
+	
+@keyframes Dagilma {
+	from {opacity: 1.0;font-size:20px;top:-20px;}
+	to {opacity: 0.0;font-size:40px;top:-60px;}
+	}
+	
+#aramaKutusuAlani {
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.3),0 1px rgba(255,255,255,0.1);
+  
+  right: 15px;
+  top: 55px;
+  background-color: #e4e4e4;
+  width: 280px;
+  width:40%;
+  display: flex;
+  border-radius: 24px;
+  box-shadow: 1px 1px 4px 0 #999;
+}
+
+.aciklama{
+	position:absolute;right:10px;top:3px;
+	border:0px solid red;
+	padding:5px 10px;
+	font-family:arial;
+	width:50%;
+	height:70px;
+	color:#ccc;
+	
+	box-shadow: inset 0px 0px 4px #000, inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+	-webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+	}
+
+.aciklama span{
+	color:yellow;
+	}
+
+.aciklama button{
+	margin-top:5px;
+	
+	}
+
+.aciklama,.aciklama span{font-size: 14px !important;text-shadow: 2px 2px 5px #000;}
+
+#aramaKutusuAlani input {
+  background:transparent;
+  
+  border: 1px hidden #ccc;
+  
+  
+  
+  width: 80%;
+  border-radius: 4px;
+  line-height: 50px;
+  word-wrap: break-word;
+  color: rgba(0,0,0,.87);
+  font-family: arial,sans-serif;
+  font-size: 16px;
+  text-transform: capitalize;
+  
+  outline: none;
+}
+
+#aramaKutusuAlani span {
+  width: 15%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#autocomplete{position:absolute; left:15px;top:86px; width:280px;
+	
+	z-index:999999;
+	}
+.autocomplete {position: relative !important; display: inline-block;
+
+	
+	}
+
+.autocomplete-items{max-height:230px !important; overflow-y:auto; overflow-x:hidden;opacity:1.0}	
+
+.autocomplete-items div {font-family:arial;font-size:16px; position: relative !important; padding: 10px;cursor: pointer;background-color: #fff; border-bottom: 1px solid #d4d4d4; width:262px}
+.autocomplete-items div strong{color:#000}
+.autocomplete-items div:hover {background-color: #e9e9e9; }
+.autocomplete-active {background-color: DodgerBlue !important; color: #ffffff; width:262px}
+
+#myInputautocomplete-list > div > span{width:15px;display:inline-block;padding:0px;margin-right:0px;}
+
+#gizliDiv{display:none}
+
+.noselect,label,.key,legend,#aramaKutusuAlani span{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+
+.Disabled{opacity:.5}
+
+#aciklamaPaneli{
+	position:absolute;
+	top:-10px;
+	right:-160px;
+	color:000;
+	
+	width:120px;
+	height:600px;
+	
+	border:1px solid 000;
+	
+	border-radius: 10px;
+	
+	box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25), 10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.25), inset 5px 5px 15px rgba(0, 0, 0, 0.25);
+	
+	background: #d5d9dc url() repeat-x;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	}
+
+.aciklama-ic{
+	position:relative;
+	width:88%;
+	height:97%;
+	border:0px solid #000;
+	
+	box-shadow: inset 0px 0px 4px #000, inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+	border-radius: 10px 10px 10px 10px;
+	}
+
+.aciklama-ic div{
+	text-align:center;
+	color: rgba(0,0,0,0.6);
+	}
+
+#aciklama-tablo{
+	
+	border:0px solid #000;
+	width:82%;
+	height:85%;
+	
+	overflow-y:auto;
+	overflow-x:hidden;
+	
+	margin:10px auto;
+	padding:3px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	}
+
+#ebcedAlani{
+	color: #333;
+	
+	font-size:20pt;
+	
+	font-family: "Century Gothic", "Helvetica", sans-serif;
+	
+	text-shadow: 0px 1px 3px rgba(0,0,0,.5);
+	}
+
+.tablo{width:95%;}
+.tablo tr td{
+	width:45%;
+	text-align:center;
+	}
+
+.tablo tr td:first-child{
+	background:red;
+	color:#fff;
+	text-shadow: 0 -1px 0 #000;
+	
+	box-shadow: inset 0 0 25px #333,0 1px 0 #000,0 2px 0 #222,0 2px 3px #333;
+	
+	border:0px solid #000;
+	}
+
+.tablo tr td:nth-child(2){
+	background:#fff;
+	}
+
+.arabic{
+	font-family:'Amiri', serif;
+	font-size:20px;
+	}
+
+#isimAlani{text-transform: capitalize;}
+
+/* Seçiciyi daha spesifik yapýp önceliði garantiye alýyoruz */
+.autocomplete-items div span {
+    margin-right: 8px !important; /* Boþluðu biraz daha belirginleþtirdim */
+    display: inline-block !important;
+}
