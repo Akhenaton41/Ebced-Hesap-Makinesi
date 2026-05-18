@@ -26,6 +26,8 @@ Antik ve kadim dillerin numerolojik (Ebced / Isopsephy) değerlerini modern web 
 
 ## 📂 Proje Klasör Yapısı
 
+## 📂 Proje Klasör Yapısı
+
 ```text
 ├── css/
 │   └── ebced.css          # Retro terminal görsel stil ve animasyon dosyası
@@ -34,4 +36,7 @@ Antik ve kadim dillerin numerolojik (Ebced / Isopsephy) değerlerini modern web 
 │   ├── panel.js           # Dinamik UI/DOM yönetimi ve klavye tetikleyicileri
 │   ├── isimler.js         # Otomatik tamamlama için entegre isim veritabanı
 │   └── jquery.min.js      # Yardımcı arayüz kütüphanesi
-└── index.htm # Ana uygulama arayüzü
+└── index.htm              # Ana uygulama arayüzü
+```
+
+Demo: <a href="https://akhenaton41.github.io/Ebced-Hesap-Makinesi/" target="_blank">https://akhenaton41.github.io/Ebced-Hesap-Makinesi/</a>
