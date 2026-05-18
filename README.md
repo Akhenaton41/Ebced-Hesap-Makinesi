@@ -26,8 +26,6 @@ Antik ve kadim dillerin numerolojik (Ebced / Isopsephy) değerlerini modern web 
 
 ## 📂 Proje Klasör Yapısı
 
-## 📂 Proje Klasör Yapısı
-
 ```text
 ├── css/
 │   └── ebced.css          # Retro terminal görsel stil ve animasyon dosyası
